@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TED Radio Hour Podcast</string>
+    <string name="ChangeView">ChangeView</string>
+    <string name="action_settings">Settings</string>
+</resources>

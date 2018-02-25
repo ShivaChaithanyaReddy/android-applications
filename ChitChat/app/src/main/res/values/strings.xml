@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChitChat</string>
+    <string name="subchannel">Your Subscribed Channel</string>
+    <string name="add">Add More</string>
+</resources>

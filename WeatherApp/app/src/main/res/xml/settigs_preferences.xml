@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+  android:title="@string/Pref_name" >
+
+
+    <com.example.first.weatherapp.Temperature_preference
+        android:key="@string/pref_sync"
+        android:title="@string/pref_sync"
+        android:summary="@string/pref_sync_summ"
+        android:dialogTitle="@string/pref_syncConnectionType"
+        android:entries="@array/pref_syncConnectionTypes_entries"
+        android:entryValues="@array/pref_syncConnectionTypes_entries"
+        />
+
+
+    <com.example.first.weatherapp.current_city_preferences
+        android:key="alertTitle"
+        android:title="@string/alertTitle"
+        android:summary="@string/pref_syncConnectionType"/>
+
+</PreferenceScreen>

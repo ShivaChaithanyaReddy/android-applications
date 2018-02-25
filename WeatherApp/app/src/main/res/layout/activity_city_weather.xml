@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_city_weather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.first.weatherapp.CityWeather"
+    >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:background="@drawable/border_for_cityweatherheading"
+            android:id="@+id/heading_layout">
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/dailyforcast_text"
+                android:padding="10dp"
+                android:textColor="@color/colorBlue"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/headline_text"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/heading_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/heading_ans_text"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/headline_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scrollbars="vertical"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/heading_forecast_ans_text"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/headline_forecat_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/textView4"
+            android:orientation="horizontal"
+            android:id="@+id/condition_layout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:paddingRight="20dp">
+
+
+                <TextView
+                    android:text="Day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/day_imageview"
+                    android:paddingLeft="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/day_condition"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+
+                <TextView
+                    android:text="Night"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/night_imageview"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/night_condition"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:gravity="center"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/moredetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/condition_layout"
+            android:textColor="@color/colorDarkBlue"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"
+            android:layout_above="@+id/textView9"
+            android:layout_below="@+id/textView8"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:text="@string/extended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView9"
+            android:textColor="@color/colorDarkBlue"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="@string/cond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/heading_forecast_ans_text"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="@string/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/headline_forecat_text"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/heading_ans_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

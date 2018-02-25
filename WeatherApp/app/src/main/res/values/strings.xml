@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="cs">Current City not yet set</string>
+    <string name="setCity">Set Current City</string>
+    <string name="hintForCityName">City Name (i.e. Charlotte)</string>
+    <string name="hintForCountryName">Country Name (i.e.US)</string>
+    <string name="searchCityBtn">Search City</string>
+    <string name="alertTitle">Enter City Details</string>
+    <string name="cityDetailsSaved">Current City Details Saved</string>
+    <string name="cityNotFound">City Not Found</string>
+    <string name="heading">Headline</string>
+    <string name="cond">Condition</string>
+    <string name="moredetails">Click here for more details</string>
+    <string name="extended">Click here for extended forecast</string>
+    <string name="pref_sync">Temperature Unit</string>
+    <string name="pref_sync_summ">Choose between Celsius and Fahrenheit</string>
+
+    <string name="Pref_name">Preferences</string>
+    <string name="pref_syncConnectionType">Change Current City</string>
+    <string name="cancel">Cancel</string>
+    <string name="set">Set</string>
+
+    <string name="update">Update</string>
+
+    <string-array name="pref_syncConnectionTypes_entries">
+        <item>Celcius</item>
+        <item>Fahrenheit</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/border_for_recview"
+    android:layout_marginTop="5dp"
+    android:id="@+id/main_outer_layout">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityname_recview_text"
+        android:layout_weight="0.5"
+        android:paddingLeft="3dp"
+        android:paddingTop="14dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="7dp">
+
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/temperature_recview_text"
+            android:layout_marginBottom="5dp"
+            android:gravity="right"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/last_updated_text"
+            android:gravity="right"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="43dp"
+        android:paddingTop="10dp"
+        app:srcCompat="@drawable/stargray"
+        android:id="@+id/imageView" />
+</LinearLayout>
